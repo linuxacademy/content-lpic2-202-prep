@@ -1,5 +1,5 @@
 $TTL    86400
-@       IN      SOA     nameserver.mylabserver.com. root.mylabserver.com. (
+@       IN      SOA     nameserver.oldcompany.edu. root.oldcompany.edu. (
                            1030         ; Serial
                            3600         ; Refresh
                            1800         ; Retry
@@ -7,7 +7,7 @@ $TTL    86400
                           86400         ; Minimum TTL
 )
 ; Name Server
-@        IN      NS       oldcompany.mylabserver.com.
+@        IN      NS       dns.oldcompany.edu
 ; A Record Definitions
 nameserver  IN      A       10.10.1.148
 test1       IN      A       10.10.1.30
