@@ -1,0 +1,25 @@
+$TTL    86400
+@       IN      SOA     nameserver.mylabserver.com. root.mylabserver.com. (
+                           1030         ; Serial
+                           3600         ; Refresh
+                           1800         ; Retry
+                         604800         ; Expiry
+                          86400         ; Minimum TTL
+)
+; Name Server
+@        IN      NS       oldcompany.mylabserver.com.
+; A Record Definitions
+nameserver  IN      A       10.10.1.148
+test1       IN      A       10.10.1.30
+test2       IN      A       10.10.1.72
+mail1       IN      A       10.10.1.1
+mail2       IN      A       10.10.1.7
+mail3       IN      A       10.10.1.48
+db1         IN      A       10.10.1.78
+db2         IN      A       10.10.1.113
+db3         IN      A       10.10.1.184
+web1        IN      A       10.10.1.191
+web2        IN      A       10.10.1.210
+web3        IN      A       10.10.1.230
+
+
