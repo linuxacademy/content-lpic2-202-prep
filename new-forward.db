@@ -9,7 +9,7 @@ $TTL    86400
 ; Name Server
 @        IN      NS       dns.oldcompany.edu
 ; A Record Definitions
-nameserver  IN      A       10.10.1.148
+dns         IN      A       10.10.1.148
 test1       IN      A       10.10.1.30
 test2       IN      A       10.10.1.72
 mail1       IN      A       10.10.1.1
