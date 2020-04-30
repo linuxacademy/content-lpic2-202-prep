@@ -155,6 +155,25 @@ do
     echo "shadowMax: ${S_AGING_ARRAY[4]}" >> $LDIF
     echo >> $LDIF
 done
+
+echo "dn: uid=ldapuser3,ou=People,$SUFFIX" >> $LDIF
+echo "objectClass: account" >> $LDIF
+echo "objectClass: posixAccount" >> $LDIF
+echo "objectClass: shadowAccount" >> $LDIF
+echo "objectClass: top" >> $LDIF
+echo "cn: ldapuser3" >> $LDIF
+echo "uidNumber: 5000" >> $LDIF
+echo "gidNumber: 5000" >> $LDIF
+echo "userPassword: $(</etc/openldap/password)" >> $LDIF
+echo "gecos: LinuxAcademy" >> $LDIF
+echo "loginShell: /bin/bash"  >> $LDIF
+echo "homeDirectory: /home/ldap/ldapuser3" >> $LDIF
+
+echo "dn: cn=ldapuser3,ou=Group,$SUFFIX" >> $LDIF
+echo "objectClass: posixGroup" >> $LDIF
+echo "objectClass: top" >> $LDIF
+echo "cn: ldapuser3" >> $LDIF
+echo "gidNumber: 5000" >> $LDIF
  
 for G_GID in "${GROUP_IDS[@]}"
 do
