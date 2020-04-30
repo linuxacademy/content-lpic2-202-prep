@@ -174,6 +174,7 @@ echo "objectClass: posixGroup" >> $LDIF
 echo "objectClass: top" >> $LDIF
 echo "cn: ldapuser3" >> $LDIF
 echo "gidNumber: 5000" >> $LDIF
+echo "" >> $LDIF
  
 for G_GID in "${GROUP_IDS[@]}"
 do
@@ -187,5 +188,6 @@ do
 done
 )
 
+yum reinstall openldap-clients -y
 echo "Adding users to LDAP"
 ldapadd -x -w 1234 -D cn=ldapadm,dc=example,dc=com -f $LDIF > /dev/null 2>&1
