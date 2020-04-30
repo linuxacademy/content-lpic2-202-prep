@@ -2,7 +2,7 @@
 
 LDIF="/tmp/users.ldif"
 SUFFIX="dc=example,dc=com"
-yum -e0 -y -q install compat-openldap openldap-clients openldap-servers > /dev/null 2>&1
+yum -e0 -y -q install compat-openldap openldap-clients openldap-servers nss-pam-ldapd > /dev/null 2>&1
 
 echo "Cleaning up old ldifs"
 rm -f /tmp/*.ldif 
@@ -21,7 +21,7 @@ then
     echo "Done"
 fi
 
-yum -e0 -y -q install compat-openldap openldap-clients openldap-servers
+yum -e0 -y -q install compat-openldap openldap-clients openldap-servers nss-pam-ldapd > /dev/null 2>&1
 
 systemctl start slapd.service
 systemctl enable slapd.service > /dev/null 2>&1
