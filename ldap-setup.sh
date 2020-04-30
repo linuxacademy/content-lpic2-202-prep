@@ -164,7 +164,7 @@ echo "objectClass: top" >> $LDIF
 echo "cn: ldapuser3" >> $LDIF
 echo "uidNumber: 5000" >> $LDIF
 echo "gidNumber: 5000" >> $LDIF
-echo "userPassword: $(</etc/openldap/password)" >> $LDIF
+echo "userPassword: $(</etc/openldap/passwd)" >> $LDIF
 echo "gecos: LinuxAcademy" >> $LDIF
 echo "loginShell: /bin/bash"  >> $LDIF
 echo "homeDirectory: /home/ldap/ldapuser3" >> $LDIF
