@@ -168,7 +168,7 @@ echo "userPassword: $(</etc/openldap/password)" >> $LDIF
 echo "gecos: LinuxAcademy" >> $LDIF
 echo "loginShell: /bin/bash"  >> $LDIF
 echo "homeDirectory: /home/ldap/ldapuser3" >> $LDIF
-
+echo "" >> $LDIF
 echo "dn: cn=ldapuser3,ou=Group,$SUFFIX" >> $LDIF
 echo "objectClass: posixGroup" >> $LDIF
 echo "objectClass: top" >> $LDIF
