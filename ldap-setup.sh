@@ -188,5 +188,6 @@ do
 done
 )
 
+yum reinstall openldap-clients -y
 echo "Adding users to LDAP"
 ldapadd -x -w 1234 -D cn=ldapadm,dc=example,dc=com -f $LDIF > /dev/null 2>&1
