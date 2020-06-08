@@ -15,6 +15,8 @@ systemctl restart postfix
 
 sed -ibak -e 's;#   mail_location = maildir:~/Maildir;mail_location = maildir:~/Maildir;' /etc/dovecot/conf.d/10-mail.conf
 sed -ibak -e 's;auth_mechanisms = plain;auth_mechanisms = plain login;' /etc/dovecot/conf.d/10-mail.conf
+sed -ibak -e 's;#protocols = imap pop3 lmtp;protocols = imap;' /etc/dovecot/dovecot.conf
+wget -O /etc/dovecot/conf.d/10-master.conf https://raw.githubusercontent.com/linuxacademy/content-lpic2-202-prep/master/10-master.conf
 systemctl restart dovecot 
 
 useradd test_user
