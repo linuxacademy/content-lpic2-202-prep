@@ -1,0 +1,2 @@
+/storage/website	*(rw,sync,no_root_squash)
+/storage/database	*(rw,sync,no_root_squash)
