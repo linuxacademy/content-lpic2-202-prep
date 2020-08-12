@@ -1,0 +1,41 @@
+dn: dc=dadcorp,dc=com
+dc: dadcorp
+objectClass: top
+objectClass: domain
+
+dn: cn=ldapadm,dc=dadcorp,dc=com
+objectClass: organizationalRole
+cn: ldapadm
+description: LDAP Manager
+
+dn: ou=Sales,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: Sales
+
+dn: ou=People,ou=Sales,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Engineering,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: Engineering
+
+dn: ou=People,ou=Engineering,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Printers,ou=Engineering,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: Printers
+
+dn: ou=Admin,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: Admin
+
+dn: ou=People,ou=Admin,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Printers,ou=Admin,dc=dadcorp,dc=com
+objectClass: organizationalUnit
+ou: Printers

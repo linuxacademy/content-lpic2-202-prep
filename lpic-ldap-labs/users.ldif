@@ -1,0 +1,82 @@
+dn: uid=tstark,ou=People,ou=Sales,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: Tony Stark
+uidNumber: 5000
+gidNumber: 5000
+userPassword: {crypt}$6$yi5/qY.s$odjLQeKpb8wvS8vSe4OsoqEOO7Uxime9HBrswd6/xBOgVmviSlK8HPIr8zWCIxx2SuCRzVNdp3ssh7wMTbENf/
+gecos: Tony Stark
+loginShell: /bin/bash
+homeDirectory: /home/ldap/tstark
+shadowExpire: -1
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+
+dn: uid=bbanner,ou=Engineering,ou=People,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: Bruce Banner
+uidNumber: 5001
+gidNumber: 5001
+userPassword: {crypt}!!
+gecos: Bruce Banner
+loginShell: /bin/bash
+homeDirectory: /home/ldap/bbanner
+shadowExpire: -1
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+
+dn: uid=srogers,ou=Admin,ou=People,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: Steve Rogers
+uidNumber: 5002
+gidNumber: 5002
+userPassword: {crypt}!!
+gecos: Steve Rogers
+loginShell: /bin/bash
+homeDirectory: /home/ldap/srogers
+shadowExpire: -1
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+
+dn: uid=labprinter,ou=Engineering,ou=Printers,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: Lab Printer
+uidNumber: 5003
+gidNumber: 5003
+userPassword: {crypt}$6$4WVSHR5l8yXNNr$NgnnPfOTXPr0Za3mZyrX.8xlyzv9OqVhzK5FX.42dHHt6KPp26VW84xBdpozepQ7t7JlRq541rytfp2iXfZPL1
+gecos: Lab Printer
+loginShell: /bin/false
+homeDirectory: /tmp
+shadowExpire: -1
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+
+dn: uid=fd_printer,ou=Admin,ou=Printers,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: Front Desk Printer
+uidNumber: 5004
+gidNumber: 5004
+userPassword: {crypt}$6$czWl0/JLZqK/np$me/VQQvKomnPwurgsJwN/wwix7.pwPr0Kg4WP5JaW9sFel96OYPddAGz5CltNmdpZjp5iyMICuCuvLjYHDYyB.
+gecos: Front Desk Printer
+loginShell: /bin/false
+homeDirectory: /tmp
+shadowExpire: -1
+shadowWarning: 7
