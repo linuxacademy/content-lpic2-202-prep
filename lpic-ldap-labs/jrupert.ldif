@@ -1,4 +1,4 @@
-dn: uid=jrupert,ou=People,ou=Sales,dc=dadcorp,dc=com
+dn: uid=jrupert,ou=People,ou=Engineering,dc=dadcorp,dc=com
 objectClass: account
 objectClass: posixAccount
 objectClass: shadowAccount
