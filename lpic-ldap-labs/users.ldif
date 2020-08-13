@@ -15,7 +15,7 @@ shadowWarning: 7
 shadowMin: 0
 shadowMax: 99999
 
-dn: uid=bbanner,ou=Engineering,ou=People,dc=dadcorp,dc=com
+dn: uid=bbanner,ou=People,ou=Engineering,dc=dadcorp,dc=com
 objectClass: account
 objectClass: posixAccount
 objectClass: shadowAccount
@@ -32,7 +32,7 @@ shadowWarning: 7
 shadowMin: 0
 shadowMax: 99999
 
-dn: uid=srogers,ou=Admin,ou=People,dc=dadcorp,dc=com
+dn: uid=srogers,ou=People,ou=Admin,dc=dadcorp,dc=com
 objectClass: account
 objectClass: posixAccount
 objectClass: shadowAccount
@@ -49,7 +49,7 @@ shadowWarning: 7
 shadowMin: 0
 shadowMax: 99999
 
-dn: uid=labprinter,ou=Engineering,ou=Printers,dc=dadcorp,dc=com
+dn: uid=labprinter,ou=Printers,ou=Engineering,dc=dadcorp,dc=com
 objectClass: account
 objectClass: posixAccount
 objectClass: shadowAccount
@@ -66,7 +66,7 @@ shadowWarning: 7
 shadowMin: 0
 shadowMax: 99999
 
-dn: uid=fd_printer,ou=Admin,ou=Printers,dc=dadcorp,dc=com
+dn: uid=fd_printer,ou=Printers,ou=Admin,dc=dadcorp,dc=com
 objectClass: account
 objectClass: posixAccount
 objectClass: shadowAccount
