@@ -1,0 +1,14 @@
+dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+replace: olcSuffix
+olcSuffix: dc=dadcorp,dc=com
+
+dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+replace: olcRootDN
+olcRootDN: cn=ldapadm,dc=dadcorp,dc=com
+
+dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+replace: olcRootPW
+olcRootPW: {SSHA}+Sogwo+FbZvxVasG/5QJWkPkycnZ8oey
