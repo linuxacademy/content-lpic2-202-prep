@@ -1,0 +1,15 @@
+dn: uid=jrupert,ou=People,ou=Sales,dc=dadcorp,dc=com
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+cn: James Rupert
+uidNumber: 5100
+gidNumber: 5100
+gecos: James Rupert
+loginShell: /bin/bash
+homeDirectory: /home/ldap/jrupert
+shadowExpire: -1
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
