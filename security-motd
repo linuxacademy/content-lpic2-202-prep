@@ -1,0 +1,17 @@
+****** IMPORTANT NOTE ******
+****** PLEASE READ *********
+
+
+
+Because of the nature of the lab the setup is slightly different from 
+our other environments. 
+
+You'll connect to the provided server and then use 
+"lxc exec <servername> -- bash" to get a root shell on the selected server.
+I recommend three separate connections to the container host so you can 
+access all three servers individually.
+
+**** NOTE THAT THE CONTAINERS MAY TAKE A MINUTE TO START UP. ****
+
+You can use "lxc list" and check that all containers are RUNNING and have
+IP Addresses listed (the router requires 2 IP addresses).
